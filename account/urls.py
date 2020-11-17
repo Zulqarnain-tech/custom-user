@@ -13,5 +13,6 @@ router.register('hello-viewset',
   
 urlpatterns = [
     
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('login/', views.MyUserLoginApiView.as_view())
 ]
